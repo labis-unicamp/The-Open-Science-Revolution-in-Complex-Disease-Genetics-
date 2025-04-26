@@ -31,7 +31,6 @@ str(all_data)
 upset_plot <- upset(all_data, 
                     nsets = 4,
                     sets = c("DeepVariant", "GATK", "bcftools", "freebayes"),
-                    sets.bar.color = "#56B4E9",
                     order.by = "freq",
                     empty.intersections = "on",
                     mainbar.y.label = "Intersection Size",
