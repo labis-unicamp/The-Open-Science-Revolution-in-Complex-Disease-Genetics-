@@ -1,0 +1,22 @@
+Estatísticas de Variantes por Ferramenta
+========================================
+
+Número total de variantes por ferramenta:
+   BCFTOOLS DeepVariant   FreeBayes        GATK 
+     972038      690957     1390136      506810 
+
+Porcentagem de variantes por ferramenta:
+   BCFTOOLS DeepVariant   FreeBayes        GATK 
+       49.9        35.4        71.3        26.0 
+
+Número de variantes exclusivas por ferramenta:
+   BCFTOOLS DeepVariant   FreeBayes        GATK 
+     447629       52699      771561       16366 
+
+Porcentagem de variantes exclusivas por ferramenta:
+   BCFTOOLS DeepVariant   FreeBayes        GATK 
+       23.0         2.7        39.6         0.8 
+
+Variantes detectadas por todas as ferramentas: 409589 
+
+Total de variantes únicas: 1949760 
