@@ -38,3 +38,37 @@ while read sra_id; do
     echo "Processing complete for SRA ID: $sra_id"
 done < "$input_file"
 ``` 
+ 
+## Quality check:
+This code performs quality control analysis on each FASTQ file in the directory, generating individual quality reports for every sample. It then consolidates all individual reports into a single comprehensive quality report in the output directory.
+
+```
+fastqc *.fastq *.fastq.gz --outdir=./fastqc_results
+# inside the fastqc_results directory, the following commands were executed:
+cd ./fastqc_results
+multiqc fastqc_results/ -o multiqc_report --filename multiqc_report.html
+```
+
+## If the read quality of the samples falls below the required threshold, quality trimming and adapter removal can be performed using Trimmomatic:
+```
+trimmomatic PE -threads 4 input_R1.fastq.gz input_R2.fastq.gz output_R1_paired.fq.gz output_R1_unpaired.fq.gz output_R2_paired.fq.gz output_R2_unpaired.fq.gz ILLUMINACLIP:adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+``` 
+
+## Downloading the human reference genome (GRCh38/hg38) from official sources (https://support.illumina.com/sequencing/sequencing_software/igenome.html)
+``` 
+wget http://igenomes.illumina.com.s3-website-us-east-1.amazonaws.com/Homo_sapiens/UCSC/hg38/Homo_sapiens_UCSC_hg38.tar.gz
+tar -xf Homo_sapiens_UCSC_hg38.tar.gz
+``` 
+## Generating index files for each alignment tool using the GRCh38/hg38 reference genome:
+### Bowtie
+```
+bowtie2-build /Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa
+```
+### BWA-MEM
+```
+bwa index /Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa
+```
+### BWA_MEM2
+```
+bwa-mem2 /Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa
+```
