@@ -5,7 +5,7 @@ This repository contains all the code required to process raw data (such as FAST
 
 ## Download of fastq files with prefetch:
 ### *Note:* For complete instructions on downloading dbGaP files, please refer to: [https://www.ncbi.nlm.nih.gov/sra/docs/sra-dbgap-download/]. Depending on the file type (whether they require an access key or not), they should be downloaded using one of the following methods:
-"""
+``` 
 #!/bin/bash
 
 # Input file containing the list of SRA IDs
@@ -37,4 +37,4 @@ while read sra_id; do
 
     echo "Processing complete for SRA ID: $sra_id"
 done < "$input_file"
-"""
+``` 
