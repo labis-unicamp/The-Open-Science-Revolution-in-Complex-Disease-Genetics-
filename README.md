@@ -94,12 +94,13 @@ bwa-mem2 mem /Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa your_fi
 **Note:** This code requires you to extract the execution time generated in the command line output and insert it into the script.
 Refer to the available code at: /github_pipeline1/pipeline1/spider-plot.R
 Two similar graphs to these ones will be generated. 
-<div align-"center">
-<img src="https://github.com/user-attachments/assets/4e6c3a8c-5f62-4827-94ed-80d6e36deffc)" width="300px" />
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/4e6c3a8c-5f62-4827-94ed-80d6e36deffc" width="300px" />
 </div> 
 
-<div align-"center">
-<img src="https://github.com/user-attachments/assets/9732a444-c773-4c83-8234-524f3d657310)" width="300px" />
+<div align="center">
+<img src="https://github.com/user-attachments/assets/9732a444-c773-4c83-8234-524f3d657310" width="300px" />
 </div> 
 
 ## Post-alignment processing: Sorting and indexing BAM files using samtools:
@@ -127,7 +128,7 @@ Refer to the available code at: /github_pipeline1/pipeline1/call_variant_deepvar
 **Note:** This code requires you to extract the execution time generated in the command line output and insert it into the script.
 Refer to the available code at: /github_pipeline1/pipeline1/runingtime.R
 A similar graph to this one will be generated. 
-<div align-"center">
-<img src="https://github.com/user-attachments/assets/cf57fd15-7525-47cc-a8fe-177408352f76)" width="300px" />
+<div align="center">
+<img src="https://github.com/user-attachments/assets/cf57fd15-7525-47cc-a8fe-177408352f76" width="300px" />
 </div> 
 
