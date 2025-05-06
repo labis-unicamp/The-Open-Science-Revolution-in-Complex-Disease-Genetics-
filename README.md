@@ -3,6 +3,11 @@ Open-source code for a bioinformatics pipeline analyzing genomic interactions be
 
 This repository contains all the code required to process raw data (such as FASTQ files), align it to the human reference genome using three different aligners, and generate variant files using four distinct variant callers. The accompanying manuscript for this repository will be published in the Journal of the X-Meeting 2025 Congress, critically analyzing each software’s performance and highlighting differences in their results. It also provides a step-by-step guide for conducting a GWAS (Genome-Wide Association Study) and a pleiotropy analysis, focusing on two diseases: Type 2 diabetes and Alzheimer’s disease.
 
+## Download the bioinfo2_env.yml file to your local machine and create and activate the Conda environment using the following commands:
+```
+conda env create -f bioinfo2_env.yml
+```
+
 ## Downloading SRA files using prefetch and converting them to FASTQ format:
 **Note:** For complete instructions on downloading dbGaP files, please refer to: [https://www.ncbi.nlm.nih.gov/sra/docs/sra-dbgap-download/]. Depending on the file type (whether they require an access key or not), they should be downloaded using one of the following methods:
 ``` 
@@ -75,6 +80,10 @@ bwa index /Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa
 bwa-mem2 /Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa
 ```
 
+## Generating the BAI index file:
+Refer to the available code at: /github_pipeline1/pipeline1/sorted_bai_bam_files.sh
+
+
 ## Performing sequence alignment against the reference genome:
 **Note:** Theses codes automatically converts SAM files to compressed BAM format during alignment.
 
@@ -90,6 +99,12 @@ bwa mem /Homo_sapiens/UCSC/hg38/Sequence/BWAIndex/genome.fa your_file_read_1.fas
 ```
 bwa-mem2 mem /Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa your_file_read_1.fastq.gz your_file_read_2.fastq.gz  | samtools view -b -o output_bwamem2.bam
 ```
+## Generating quality metrics for BAM files:
+Refer to the available code at: /github_pipeline1/pipeline1/genareted_bam_metrics.sh
+
+## Building a table of key metrics:
+Refer to the available code at: /github_pipeline1/pipeline1/table_bam_metrics.sh
+
 ## Visualizing the computational time required by each alignment tool:
 **Note:** This code requires you to extract the execution time generated in the command line output and insert it into the script.
 Refer to the available code at: /github_pipeline1/pipeline1/spider-plot.R

@@ -60,8 +60,8 @@ for bam_file in *.bam; do
     fi
 done
 
-echo "✅ Processamento concluído!"
-echo "📋 Resultados em: $OUTDIR/combined/summary.csv"
+echo "Processamento concluído!"
+echo "Resultados em: $OUTDIR/combined/summary.csv"
 if [ -d "$OUTDIR/qualimap_joint" ]; then
-    echo "📊 Relatório Qualimap em: $OUTDIR/qualimap_joint/"
+    echo "Relatório Qualimap em: $OUTDIR/qualimap_joint/"
 fi
