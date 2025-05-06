@@ -1,4 +1,4 @@
-# Gráfico de Dispersão dos p-valores:
+# Scatter plot of p-values:
 Rscript -e '
   data <- read.table("pleiotropy_results.txt", header=TRUE)
   png("pvalue_scatter.png", width=800, height=800, res=100)
