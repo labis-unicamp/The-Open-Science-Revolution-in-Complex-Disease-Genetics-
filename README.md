@@ -3,12 +3,13 @@ Open-source code for a bioinformatics pipeline analyzing genomic interactions be
 
 This repository contains all the code required to process raw data (such as FASTQ files), align it to the human reference genome using three different aligners, and generate variant files using four distinct variant callers. The accompanying manuscript for this repository will be published in the Journal of the X-Meeting 2025 Congress, critically analyzing each software’s performance and highlighting differences in their results. It also provides a step-by-step guide for conducting a GWAS (Genome-Wide Association Study) and a pleiotropy analysis, focusing on two diseases: Type 2 diabetes and Alzheimer’s disease.
 
-* The code snippets explicitly shown in this file are written in Bash. The remaining scripts are implemented in:
-        * R (files with .R extension)
+The code snippets explicitly shown in this file are written in Bash. The remaining scripts are implemented in:
+        
+* R (files with .R extension)
 
-        * Python (.py or .ipynb files)
+* Python (.py or .ipynb files)
 
-        * Bash (.sh files)
+* Bash (.sh files)
 
 ## Download the bioinfo2_env.yml file to your local machine and create and activate the Conda environment using the following commands:
 ```
