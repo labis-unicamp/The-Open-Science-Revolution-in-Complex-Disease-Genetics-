@@ -189,8 +189,8 @@ Refer to the available code at: /github_pipeline1/pipeline1/pipeline_hyperopt_ot
 ## GWAS
 First of all, in order to process GWAS, you must have a vcf file containing the phenotype samples of interest and the control samples and .txt file with the names of the samples positioned in two equal columns, with the number '2' in front of the phenotype sample and the number '1' in front of the control sample. See the example .txt files:
 
-        * /github_pipeline1/pipeline1/dia_pheno_example.txt
-        * /github_pipeline1/pipeline1/ad_pheno_example.txt
+* /github_pipeline1/pipeline1/dia_pheno_example.txt
+* /github_pipeline1/pipeline1/ad_pheno_example.txt
 
 ### After that, you should filter out the variants with statistical power equal to or greater than the 5% allelic frequency:
 ```
