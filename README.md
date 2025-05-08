@@ -340,7 +340,7 @@ The onthology gene codes of each variant were collected in the previous script a
 Refer to the available code at: /github_pipeline1/pipeline1/scriptREVIGO_treemapBP.R
 
 <div align="center">
-<img src="https://github.com/user-attachments/files/20072447/revigo_treemap.pdf" width="300px" />
+<img src="[https://github.com/labis-unicamp/pipeline1/issues/8#issue-3044093777" width="300px" />
 </div> 
 
 
