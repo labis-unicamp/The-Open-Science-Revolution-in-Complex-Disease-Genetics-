@@ -319,7 +319,7 @@ Rscript -e '
 Refer to the available code at: /github_pipeline1/pipeline1/Manhattan-plot-combine.R
 
 <div align="center">
-<img src="https://github.com/user-attachments/files/20072309/manhattan_plots_combined.pdf" width="300px" />
+<img src="https://github.com/user-attachments/assets/3ada9047-aa21-4018-b47a-213419be71e0" width="300px" />
 </div> 
 
 ## Scatter plot of p-values:
