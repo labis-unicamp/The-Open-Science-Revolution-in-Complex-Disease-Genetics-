@@ -192,6 +192,9 @@ See implementation at: /github_pipeline1/pipeline1/venn-diagram-script.R
 
 ## **Additional option:** Optimized pipeline for cluster environments that processes downloaded SRA files into VCFs using BWA-MEM2 and FreeBayes as core tools:
 Refer to the available code at: /github_pipeline1/pipeline1/pipeline_hyperopt_otimizado.sh
+```
+qsub -v CLEANUP=1 pipeline_otimizado.sh 
+```
 
 ## GWAS
 First of all, in order to process GWAS, you must have a vcf file containing the phenotype samples of interest and the control samples and .txt file with the names of the samples positioned in two equal columns, with the number '2' in front of the phenotype sample and the number '1' in front of the control sample. See the example .txt files:
