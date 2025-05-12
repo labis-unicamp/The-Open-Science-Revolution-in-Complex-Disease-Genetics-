@@ -273,7 +273,7 @@ dev.off()
 print("Plots generated successfully! Check: manhattan_final.png and qq_final.png")
 ```
 ## Pleiotropy analysis:
-### Processe o GWAS para duas doenças em questão e então com os resultados obtidos realizar as análises:
+### Run the GWAS for the two target diseases and then conduct the analyses using the results obtained:
 ```
 # Step 1: Identify significant SNPs in both diseases
 # SNPs with p < 0.05 in both (adjust threshold as needed)
